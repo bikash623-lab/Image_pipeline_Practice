@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(winget search *)",
+      "Bash(winget install *)",
+      "Bash(echo \"exit=$?\")",
+      "Read(//c//**)",
+      "Bash(rm src/main.cpp)",
+      "Bash(rmdir src *)",
+      "Bash(curl -sS https://api.github.com/repos/opencv/opencv/releases/latest)",
+      "Bash(mkdir -p 'C:\\\\Users\\\\mallabi/Downloads')",
+      "Read(//c/Users/mallabi/Downloads/**)",
+      "Bash(curl -sS -L -o opencv-5.0.0-windows.exe https://github.com/opencv/opencv/releases/download/5.0.0/opencv-5.0.0-windows.exe)",
+      "Bash(echo \"--- C:\\\\\\\\opencv exists?\")",
+      "Bash(powershell.exe -NoProfile -Command '$p=[Environment]::GetEnvironmentVariable\\('\\\\''Path'\\\\'','\\\\''User'\\\\''\\); \"length=$\\($p.Length\\)\"; $p -split '\\\\'';'\\\\''')",
+      "Bash(powershell.exe -NoProfile -Command \"\\([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent\\(\\)\\).IsInRole\\([Security.Principal.WindowsBuiltInRole]::Administrator\\)\")",
+      "Bash(powershell.exe -NoProfile -Command '$exe = Join-Path $env:USERPROFILE '\\\\''Downloads\\\\opencv-5.0.0-windows.exe'\\\\''; Start-Process -FilePath $exe -ArgumentList '\\\\''-oC:\\\\'\\\\'', '\\\\''-y'\\\\'' -Wait -NoNewWindow; '\\\\''exit='\\\\'' + $LASTEXITCODE')",
+      "Read(//c/opencv/build/**)",
+      "Bash(powershell.exe -NoProfile -Command '$add='\\\\''C:\\\\opencv\\\\build\\\\x64\\\\vc16\\\\bin'\\\\''; $p=[Environment]::GetEnvironmentVariable\\('\\\\''Path'\\\\'','\\\\''User'\\\\''\\); if\\(\\($p -split '\\\\'';'\\\\''\\) -notcontains $add\\){ [Environment]::SetEnvironmentVariable\\('\\\\''Path'\\\\'', \\($p.TrimEnd\\('\\\\'';'\\\\''\\) + '\\\\'';'\\\\'' + $add\\), '\\\\''User'\\\\''\\); '\\\\''added'\\\\'' } else { '\\\\''already present'\\\\'' }; '\\\\''--- new user PATH'\\\\''; \\([Environment]::GetEnvironmentVariable\\('\\\\''Path'\\\\'','\\\\''User'\\\\''\\)\\) -split '\\\\'';'\\\\''')",
+      "Bash(powershell.exe -NoProfile -Command 'Get-Process | Where-Object { $_.Name -match '\\\\''winget|vs_buildtools|vs_setup|setup|installer'\\\\'' } | Select-Object Name,Id,StartTime | Format-Table -AutoSize | Out-String -Width 200')",
+      "Read(//c/Program Files \\\\\\(x86\\\\\\)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/**)",
+      "Bash('/c/Program Files \\(x86\\)/Microsoft Visual Studio/Installer/vswhere.exe' -products * -all -format json)",
+      "Bash(cmake --help)",
+      "Read(//c/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/**)",
+      "Bash(cmake -S . -B build -G \"Visual Studio 18 2026\" -A x64)",
+      "Bash(cmake --build build --config Release)",
+      "Bash(PATH=/c/opencv/build/x64/vc16/bin:__TRACKED_VAR__ timeout 5 build/bin/Release/main.exe)",
+      "Bash(echo \"exit=$? \\(124 = still running and waiting for a key when the 5s timeout hit\\)\")"
+    ]
+  }
+}

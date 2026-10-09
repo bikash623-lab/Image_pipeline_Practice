@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Solution>
+	<Configurations>
+		<BuildType Name="Debug"/>
+		<BuildType Name="Release"/>
+		<BuildType Name="MinSizeRel"/>
+		<BuildType Name="RelWithDebInfo"/>
+		<Platform Name="x64"/>
+	</Configurations>
+	<Project Path="ALL_BUILD.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="8725c057-3802-3269-809f-390e9d94f026" DefaultStartup="true">
+		<BuildDependency Project="Real_Time_Classical_object_Detector.vcxproj"/>
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="c++_Practice.vcxproj"/>
+		<BuildDependency Project="main.vcxproj"/>
+		<BuildDependency Project="more_image_processing.vcxproj"/>
+		<BuildDependency Project="video_processing.vcxproj"/>
+		<Build Solution="Debug|*" Project="false"/>
+		<Build Solution="Release|*" Project="false"/>
+		<Build Solution="MinSizeRel|*" Project="false"/>
+		<Build Solution="RelWithDebInfo|*" Project="false"/>
+	</Project>
+	<Project Path="Real_Time_Classical_object_Detector.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="328e63d2-78ab-305d-aaee-16cd5f87e4d3">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="ZERO_CHECK.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="3e97ef1f-e2c5-31e2-a4f3-7feed08133bb"/>
+	<Project Path="c++_Practice.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="aa562112-3755-3fea-a463-db2cedb7d45f">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="main.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="b264d142-63d3-32aa-9f14-ff2fdff94c87">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="more_image_processing.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="c00bb8c1-4b0e-3bbe-b673-17b2266fb0e5">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="video_processing.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="63ff6e7f-21b1-3916-adf5-0b5f4027dcf9">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+</Solution>

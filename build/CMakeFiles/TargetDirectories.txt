@@ -1,0 +1,7 @@
+C:/Bikash_work_folder/OpenCv/build/CMakeFiles/Real_Time_Classical_object_Detector.dir
+C:/Bikash_work_folder/OpenCv/build/CMakeFiles/c++_Practice.dir
+C:/Bikash_work_folder/OpenCv/build/CMakeFiles/main.dir
+C:/Bikash_work_folder/OpenCv/build/CMakeFiles/more_image_processing.dir
+C:/Bikash_work_folder/OpenCv/build/CMakeFiles/video_processing.dir
+C:/Bikash_work_folder/OpenCv/build/CMakeFiles/ALL_BUILD.dir
+C:/Bikash_work_folder/OpenCv/build/CMakeFiles/ZERO_CHECK.dir

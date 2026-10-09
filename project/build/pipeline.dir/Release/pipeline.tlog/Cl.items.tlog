@@ -1,0 +1,5 @@
+C:\Bikash_work_folder\OpenCv\project\main.cpp;C:\Bikash_work_folder\OpenCv\project\build\pipeline.dir\Release\main.obj
+C:\Bikash_work_folder\OpenCv\project\acquisition\acquisition.cpp;C:\Bikash_work_folder\OpenCv\project\build\pipeline.dir\Release\acquisition.obj
+C:\Bikash_work_folder\OpenCv\project\preprocessing\preprocessor.cpp;C:\Bikash_work_folder\OpenCv\project\build\pipeline.dir\Release\preprocessor.obj
+C:\Bikash_work_folder\OpenCv\project\detection\detector.cpp;C:\Bikash_work_folder\OpenCv\project\build\pipeline.dir\Release\detector.obj
+C:\Bikash_work_folder\OpenCv\project\output\visualizer.cpp;C:\Bikash_work_folder\OpenCv\project\build\pipeline.dir\Release\visualizer.obj

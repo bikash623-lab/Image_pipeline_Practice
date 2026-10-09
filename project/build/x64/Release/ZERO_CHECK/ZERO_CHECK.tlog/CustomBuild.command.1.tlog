@@ -1,0 +1,10 @@
+^C:\BIKASH_WORK_FOLDER\OPENCV\PROJECT\BUILD\CMAKEFILES\A60A966F822CE94BDBE4AE4E23841C04\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Bikash_work_folder/OpenCv/project -BC:/Bikash_work_folder/OpenCv/project/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Bikash_work_folder/OpenCv/project/build/pipeline.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

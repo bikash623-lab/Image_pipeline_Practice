@@ -1,0 +1,3 @@
+C:/Bikash_work_folder/OpenCv/project/build/CMakeFiles/pipeline.dir
+C:/Bikash_work_folder/OpenCv/project/build/CMakeFiles/ALL_BUILD.dir
+C:/Bikash_work_folder/OpenCv/project/build/CMakeFiles/ZERO_CHECK.dir

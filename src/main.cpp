@@ -29,7 +29,8 @@ int main(){
 
     cv::Mat flipped;
     cv::flip(img, flipped, 1);
-        cv::Vec3b pixel = img.at<cv::Vec3b>(300,300);
+    
+    cv::Vec3b pixel = img.at<cv::Vec3b>(300,300);
     std::cout << "Read_Pixel" << std::endl;
     std::cout << "Blue:" << (int)pixel[0] << std::endl;
     std::cout << "Green:" << (int)pixel[1] << std::endl;

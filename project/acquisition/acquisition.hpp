@@ -13,7 +13,7 @@ public:
 
 
     // true if images available
-    bool hasframes() const;
+    bool hasFrames() const;
 
     // reset back to the first image
     void reset();
